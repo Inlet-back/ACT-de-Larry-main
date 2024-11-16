@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* styles.css */
+.account-info {
+  border: 1px solid rgb(var(--background-rgb));
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: rgb(var(--background-rgb));
+  width: 75vw;
+  height: 20vh;
+  -webkit-box-sizing: border-box; /*webkit系*/
+  -moz-box-sizing: border-box; /*Firefox*/
+  box-sizing: border-box;
+}
+
+.account-info__grid {
+  display: grid;
+  grid-template-columns: 10vh 1fr;
+  /* アイコンと詳細情報の幅を設定 */
+  gap: 5vw;
+  /* アイコンと詳細の間の隙間 */
+  align-items: center;
+  /* アイコンとテキストを垂直にセンタリング */
+  -webkit-box-sizing: border-box; /*webkit系*/
+  -moz-box-sizing: border-box; /*Firefox*/
+  box-sizing: border-box;
+}
+
+.account-info__icon {
+  margin-top: 2.5vh;
+  width: 10vh;
+  /* アイコンの幅 */
+  height: 10vh;
+  /* アイコンの高さ */
+  border-radius: 50%;
+  /* 円形にする */
+  object-fit: cover;
+  /* 画像をコンテナにフィットさせる */
+  box-shadow: 0 0 0 0.5vh rgb(var(--sub-txt-rgb));
+  user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+}
+
+.account-info__username {
+  margin: 0;
+  /* デフォルトのマージンをリセット */
+  font-size: 2.5vh;
+  /* ユーザー名のフォントサイズ */
+  color: rgb(var(--sub-txt-rgb));
+  /* メールアドレスの色 */
+  overflow-x: scroll;
+}
+
+.account-info__email {
+  margin: 0;
+  /* デフォルトのマージンをリセット */
+  font-size: 1.5vh;
+  /* メールアドレスのフォントサイズ */
+  color: rgb(var(--sub-txt-rgb));
+  /* メールアドレスの色 */
+  overflow-x: scroll;
+}/*# sourceMappingURL=accountInfo.css.map */

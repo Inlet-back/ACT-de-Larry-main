@@ -1,0 +1,72 @@
+// :root {
+//     --foreground-rgb-header: 85, 90, 160;
+//     --background-rgb-header: 0, 77, 123;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         --foreground-rgb-header: 0, 77, 123;
+//         --background-rgb-header: 185, 190, 110;
+//     }
+// }
+
+header {
+    display: flex;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgb(var(--background-rgb));
+    user-select: none;
+    -webkit-user-select: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-logo {
+    flex-basis: 48%;
+    position: relative;
+    margin-right: 0px;
+    display: block;
+    width: 16vh;
+    max-width: 16vh;
+    height: 9.0vh;
+    padding-right: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    user-drag: none;
+	-webkit-user-drag: none;
+    -khtml-user-drag:none;
+	-moz-user-select: none;
+}
+
+.logout-btn {
+    flex-basis: 48%;
+    position: relative;
+    // margin-right: 20px;
+    left: auto;
+    display: block;
+    width: 5.0vh;
+    max-width: 5.0vh;
+    height: 9.0vh;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    user-drag: none;
+	-webkit-user-drag: none;
+    -khtml-user-drag:none;
+	-moz-user-select: none;
+    svg{
+        color: rgb(var(--icon-svg-rgb)); /* ライトモードの色 */
+    }
+}
+
+// @media (prefers-color-scheme: dark) {
+//     .logout-btn svg {
+//         color: rgb(255, 255, 255); /* ダークモードの色 */
+//     }
+// }

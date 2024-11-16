@@ -1,0 +1,53 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgb(var(--background-rgb));
+  user-select: none;
+  -webkit-user-select: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  flex-basis: 48%;
+  position: relative;
+  margin-right: 0px;
+  display: block;
+  width: 16vh;
+  max-width: 16vh;
+  height: 9vh;
+  padding-right: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-select: none;
+}
+
+.logout-btn {
+  flex-basis: 48%;
+  position: relative;
+  left: auto;
+  display: block;
+  width: 5vh;
+  max-width: 5vh;
+  height: 9vh;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-select: none;
+}
+.logout-btn svg {
+  color: rgb(var(--icon-svg-rgb)); /* ライトモードの色 */
+}/*# sourceMappingURL=header.css.map */

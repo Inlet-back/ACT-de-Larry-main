@@ -1,0 +1,42 @@
+// :root {
+//     --foreground-rgb-footer: 55, 60, 100;
+//     --background-rgb-footer: 0, 77, 123;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         --foreground-rgb-footer: 0, 77, 123;
+//         --background-rgb-footer: 55, 60, 100;
+//     }
+// }
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 5.0vh;
+    width: 100vw;
+    background-color: rgb(var(--background-rgb));
+    user-select: none;
+    -webkit-user-select: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-logo {
+    flex-basis: 48%;
+    position: relative;
+    margin-right: 0px;
+    display: block;
+    width: 16vh;
+    max-width: 16vh;
+    height: 9.0vh;
+    padding-right: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    user-drag: none;
+	-webkit-user-drag: none;
+    -khtml-user-drag:none;
+	-moz-user-select: none;
+}

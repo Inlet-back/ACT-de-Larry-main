@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 5vh;
+  width: 100vw;
+  background-color: rgb(var(--background-rgb));
+  user-select: none;
+  -webkit-user-select: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  flex-basis: 48%;
+  position: relative;
+  margin-right: 0px;
+  display: block;
+  width: 16vh;
+  max-width: 16vh;
+  height: 9vh;
+  padding-right: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-select: none;
+}/*# sourceMappingURL=footer.css.map */

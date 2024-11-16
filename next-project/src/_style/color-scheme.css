@@ -1,0 +1,26 @@
+/* light theme & dark theme color scheme*/
+:root {
+	--icon-svg-rgb: 190, 174, 56;
+	--main-txt-rgb: 0, 77, 123;
+	--sub-txt-rgb: 190, 174, 56;
+	--color-rgb: 55, 60, 100;
+	--color-rgb-start: 233, 236, 239;
+	--color-rgb-end: 193, 196, 199;
+	--background-rgb: 0, 77, 123;
+	--background-rgb-body-start: 233, 236, 239;
+	--background-rgb-body-end: 193, 196, 199;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--icon-svg-rgb: 0, 77, 123;
+		--main-txt-rgb: 190, 174, 56;
+		--sub-txt-rgb: 0, 77, 123;
+		--color-rgb: 55, 60, 100;
+		--color-rgb-start: 233, 236, 239;
+		--color-rgb-end: 193, 196, 199;
+		--background-rgb: 0, 10, 47;
+		--background-rgb-body-start: 0, 77, 123;
+		--background-rgb-body-end: 0, 30, 60;
+	}
+}
