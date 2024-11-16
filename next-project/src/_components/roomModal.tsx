@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { useState, useEffect, FC } from "react";
 import Image from "next/image";

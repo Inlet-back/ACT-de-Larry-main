@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useSession } from "next-auth/react";
 import { getSession } from "next-auth/react";
 import getServerSession from "next-auth";

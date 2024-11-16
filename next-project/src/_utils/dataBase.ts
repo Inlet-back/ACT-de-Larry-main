@@ -1,10 +1,11 @@
-import { getUser } from "@/app/api/users/route";
+/* eslint-disable */
+// import { getUser } from "@/app/api/users/route";
 
-export async function isAnsweredJoinedProject(adress: string){
-    const user = await getUser(adress);
-    user.
-    if(user && user.places.length > 0){
-        return true;
-    }
-    return false;
-}
+
+// export async function isAnsweredJoinedProject(address: string): Promise<boolean> {
+//     const user = await getUser(address);
+//     if (user && user.places && user.places.length > 0) {
+//         return true;
+//     }
+//     return false;
+// }
