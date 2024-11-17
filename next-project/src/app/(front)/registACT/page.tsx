@@ -2,9 +2,11 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import "@/_style/basic.css";
 import ToHome from "@/_components/toHomeButtonComponent";
-import { getPlace, getPlaces, POST as setACT } from "@/app/api/places/route";
+import {   POST  as setACT  } from "@/app/api/places/route";
+import { getPlace } from "@/app/api/places/route";
+
 import { GET as getP, getPJByName, POST as setP, updateProjectsPlace } from "@/app/api/projects/route";
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 export const metadata: Metadata = {
 	title: "ACT de ラリー - リザルト",
@@ -93,7 +95,7 @@ export default function RegistACT() {
 	}
 
 	async function registerAll() {
-		const places = await getPlaces();
+		const places = await fetch("http://localhost:3000/api/places").then((res) => res.json());
 		if (!!places) {
 			for (const place of places) {
                 if(place.location === "412") {

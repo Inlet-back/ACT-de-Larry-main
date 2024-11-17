@@ -3,7 +3,7 @@ import "@/_style/basic.css";
 import { redirect, useRouter } from "next/navigation";
 
 import LoginButtonComponent from "@/_components/loginButtonComponent";
-import { isAuthenticated } from "@/app/api/auth/sessionCheck/route";
+import { isAuthenticated } from "@/app/api/auth/sessionCheck/sessionUtils";
 
 export const metadata: Metadata = {
   title: "ACT de ラリー - ログイン",

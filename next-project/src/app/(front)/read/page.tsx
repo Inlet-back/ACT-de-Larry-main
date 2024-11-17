@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import type { Metadata } from "next";
 import { useRouter } from "next/navigation";
 
