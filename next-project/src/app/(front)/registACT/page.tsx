@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@/_style/basic.css";
 import ToHome from "@/_components/toHomeButtonComponent";
 import {   POST  as setACT  } from "@/app/api/places/route";
-import { getPlace } from "@/app/api/places/route";
+import { getPlace } from "@/app/api/places/placeUtils";
 
 import { GET as getP, getPJByName, POST as setP, updateProjectsPlace } from "@/app/api/projects/route";
 import { NextRequest } from "next/server";

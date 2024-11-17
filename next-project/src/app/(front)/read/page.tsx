@@ -6,7 +6,7 @@ import "@/_style/basic.css";
 import ToHome from "@/_components/toHomeButtonComponent";
 import RoomModal from "@/_components/roomModal";
 import NotFound from "@/app/not-found";
-import { getPlace, addUserToPlace, getPlacesSameLocation } from "@/app/api/places/route";
+import { getPlace, addUserToPlace, getPlacesSameLocation } from "@/app/api/places/placeUtils";
 import { getUser, updateUserCleared } from "@/app/api/users/route";
 import { getUserEmail, getSession } from "@/app/api/auth/sessionCheck/sessionUtils";
 
