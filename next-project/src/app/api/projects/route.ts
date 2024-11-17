@@ -18,13 +18,15 @@ export const POST = async (request: NextRequest) => {
     );
   }
 };
-
 export const GET = async () => {
-  //ユーザーの会社に属する工場の一覧
-  const project = await prisma.project.findMany({});
-  if (!project) {
-    return null;
+  try {
+    const projects = await prisma.project.findMany({});
+    return NextResponse.json(projects);
+  } catch (error) {
+    console.log(error);
+    return NextResponse.json(
+      { message: "エラーが発生しました" },
+      { status: 500 }
+    );
   }
-  return project;
 };
-

@@ -110,7 +110,7 @@ export default function RegistACT() {
 	}
 
     async function registerAllP() {
-		const places = await getP();
+		const places = await fetch("http://localhost:3000/api/projects").then((res) => res.json());
 		if (!!places) {
 			for (const place of places) {
                 if(place.name === "近大Vproject") {

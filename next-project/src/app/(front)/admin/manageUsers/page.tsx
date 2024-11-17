@@ -3,14 +3,9 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import "@/_style/basic.css";
 import ToHome from "@/_components/toHomeButtonComponent";
-
-import { getUserEmail } from "@/app/api/auth/sessionCheck/route";
-import { Session } from "next-auth";
-import AccountInfomationComponent from "@/_components/accoutInfomationComponent";
 import NotFound from "@/app/not-found";
-import { GET as getUsers, getUsersList} from "@/app/api/users/route";
-import { getPlaces, setPlaces } from "@/app/api/places/route";
-import { NextRequest } from "next/server";
+import { getUsersList } from "@/app/api/users/userUtils";
+
 import "@/_style/basic.css";
 import "@/_style/accountInfo.css";
 import { getIsAdmin } from "@/_utils/adminsFunction";
