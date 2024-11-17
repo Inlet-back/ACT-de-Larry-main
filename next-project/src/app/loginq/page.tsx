@@ -4,7 +4,7 @@ import React from "react";
 import { useEffect } from "react";
 
 import { redirect } from "next/navigation";
-import { useSession } from "next-auth/react";
+import { useSession,signIn } from "next-auth/react";
 
 const LoginPage = () => {
   const { data: session, status } = useSession();
