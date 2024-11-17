@@ -1,4 +1,4 @@
-import { getMyFullUserInfo, getUserById } from "@/app/api/users/route";
+import { getMyFullUserInfo, getUserById } from "@/app/api/users/userUtils";
 import { auth } from "@/auth";
 import { Prisma } from "@prisma/client";
 import { Session } from "next-auth";
