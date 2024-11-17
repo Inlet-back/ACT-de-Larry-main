@@ -4,8 +4,15 @@ import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
 import { NextRequest, NextResponse } from "next/server";
 
 export const GET = async (request: NextRequest) => {
-  //ユーザーの会社に属する工場の一覧
-  const places = await prisma.place.findMany({});
+
+  const places = await prisma.place.findMany({
+   select: {
+      id: true,
+      projects: true,
+      location: true,
+      users: true,
+    }
+  });
   if (!places) {
     return NextResponse.json(
       { message: "データが見つかりませんでした" },
@@ -44,21 +51,21 @@ export const POST = async (request: NextRequest) => {
   }
 };
 
-export const getPlaces = async () => {
-  //ユーザーの会社に属する工場の一覧
-  const places = await prisma.place.findMany({
-    select: {
-      id: true,
-      projects: true,
-      location: true,
-      users: true,
-    }
-  });
-  if (!places) {
-    return null;
-  }
-  return places;
-};
+// export const getPlaces = async () => {
+//   //ユーザーの会社に属する工場の一覧
+//   const places = await prisma.place.findMany({
+//     select: {
+//       id: true,
+//       projects: true,
+//       location: true,
+//       users: true,
+//     }
+//   });
+//   if (!places) {
+//     return null;
+//   }
+//   return places;
+// };
 
 export const getPlacesSameLocation = async (location: string) => {
   //ユーザーの会社に属する工場の一覧

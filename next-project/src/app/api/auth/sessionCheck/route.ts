@@ -5,5 +5,7 @@ import { getSession, getUserEmail, isAuthenticated } from "./sessionUtils";
 
 export async function GET() {
   const session = await getSession();
-  return NextResponse.json(session);
+  const email = await getUserEmail();
+  const auth = await isAuthenticated();
+  return NextResponse.json({session, email, auth});
 }
