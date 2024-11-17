@@ -5,7 +5,8 @@ import ToHome from "@/_components/toHomeButtonComponent";
 import {   POST  as setACT  } from "@/app/api/places/route";
 import { getPlace } from "@/app/api/places/placeUtils";
 
-import { GET as getP, getPJByName, POST as setP, updateProjectsPlace } from "@/app/api/projects/route";
+import { GET as getP, POST as setP } from "@/app/api/projects/route";
+import { getPJByName,updateProjectsPlace } from "@/app/api/projects/projectUtils";
 import { NextRequest } from "next/server";
 
 export const metadata: Metadata = {
