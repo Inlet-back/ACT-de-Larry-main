@@ -19,6 +19,7 @@ export const options: NextAuthConfig = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     }),
   ],
+  trustHost: true, // 追加
   callbacks: {
     authorized({ request, auth }) {
       try {
@@ -46,7 +47,7 @@ export const options: NextAuthConfig = {
   session: {
     strategy: 'jwt',
   },
-  trustHost: true, // クラスタ内の通信を全て許可
+
   pages: {
     signIn: '/login',
   },
